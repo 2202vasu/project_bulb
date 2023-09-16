@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+    <style>
+        body{
+              background-color: rgb(62, 0, 0);
+        }
+
+        img{
+            margin: auto;
+        }
+        .boxA{
+            width: 300PX;
+            height: 500px;
+            margin: auto;      
+            text-align: center;
+        }
+
+    
+    </style>
+    <script>
+   //     function clickMe(){
+     //          alert('ok alert ji');
+     
+    
+    </script>
+</head>
+<body>
+     
+    <div class="boxA">
+    <img id="myimg" width="300px" src= "img/bulb1.png.jpg" alt="">
+    <button onclick="clickMe('on')">ON</button>
+     
+    <button onclick="clickMe('off')">OFF</button>
+    </div>
+    <script>
+
+            function clickMe(state){//state is a formal argument
+                       //  alert(state);
+                         if(state == 'on'){
+                            document.body.style.backgroundColor='rgb(62, 0, 0)';
+                        //img src ki value add krni ho tab ye //setattribute method
+                        document.getElementById('myimg').setAttribute('src','img/bulb1.png.jpg');
+                        }else{
+                            document.body.style.backgroundColor='black';
+                            document.getElementById('myimg').setAttribute('src','img/bulb2.png.jpg');
+                         }
+
+        }
+        /*
+        i am using here if else condition bcz we are following the rule dry
+              condition cheaking syntax
+              if(condition){
+                //true
+              }else{
+                false
+              }
+        */
+       //yes we can call here also but we shuld prefer that rule top to bottum
+
+    </script>
+</body>
+</html>
